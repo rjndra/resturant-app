@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Solution 2</title>
+		
+		<!-- Bootstrap Core CSS -->
+        <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	<style>
+      #map_canvas {
+        width: 400px;
+        height: 300px;
+      }
+    </style>
+		
+</head>
+
+<body>
+
+<!-- top tilte bar and side options bars -->
+
+	<div class="navbar">
+		<div  class="col-lg-12">
+			<h2>Contracts Viewer</h2>
+		</div>
+	</div>
+
+	<div >
+		<div  class="col-lg-3">
+		
+				
+				<li><p type="button" id="button_1" class="btn btn-default btn-block">Contract-2070-1</p></li>
+				<li><p type="button" id="button_2" class="btn btn-default btn-block">Contract-2070-2</p></li>
+				<li><p type="button" id="button_3" class="btn btn-default btn-block">Contract-2070-3</p></li>
+				<li><p type="button" id="button_4" class="btn btn-default btn-block">Contract-2070-4</p></li>
+				<li><p type="button" id="button_5" class="btn btn-default btn-block">Contract-2070-5</p></li>
+				<li><p type="button" id="button_6" class="btn btn-default btn-block">Contract-2070-6</p></li>
+				<li><p type="button" id="button_7" class="btn btn-default btn-block">Contract-2070-7</p></li>
+				<li><p type="button" id="button_8" class="btn btn-default btn-block">Contract-2070-8</p></li>
+				<li><p type="button" id="button_9" class="btn btn-default btn-block">Contract-2070-9</p></li>
+				<li><p type="button" id="button_10" class="btn btn-default btn-block">Contract-2070-10</p></li>
+			
+		</div>
+		
+		<div id = "table-info" class="hidden">
+		
+			<div class="col-lg-3">
+				<div  class="box box-solid">		
+					<div class="col-xs-12 col-sm-12 placeholder">
+						<p class="status"></p>
+						<p class="purchase"></p>
+						<p class="submission"></p>
+						<p class="opening"></p>
+						<p class="tender"></p>
+						<p class="publication"></p> 
+						<p class="published"></p>
+						<p class="contract"></p>
+						<p class="completion"></p>
+						<p class="award"></p>
+						<p class="location"></p>
+						<p class="amount"></p>
+					</div>
+				</div>
+			</div>
+			
+			<div id="map_canvas" class="latlon col-lg-6"></div>
+			
+		</div>
+		
+	</div>
+
+<!-- jQuery -->
+<script src="jquery.min.js"></script>
+<script src="jquery.csv-0.71.min.js"></script>
+<script src="home.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+</body>
+
+</html>
+
